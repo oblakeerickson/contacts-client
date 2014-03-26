@@ -1,14 +1,3 @@
 <div class="contact">
-  <form {{action 'save' on='submit'}}>
-    <h1>{{input type="text" placeholder="Name" value=name}}</h1>
-    <div class="clear"></div>
-    <h3>{{input type="text" placeholder="Twitter" value=twitter}}</h3>
-    <div class="notes">
-      {{textarea placeholder="Notes" value=notes}}
-    </div>
-    <div class="controls">
-      <button type="submit" class="btn">Create</button>
-      <button type="button" class="btn red" {{action 'cancel'}}>Cancel</button>
-    </div>
-  </form>
+  {{contact-form contact=model saveText='Create'}}
 </div>

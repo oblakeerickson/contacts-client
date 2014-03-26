@@ -6,7 +6,7 @@ Router.map(function() {
   this.resource('contacts', function() {
     this.route('new');
     this.route('show', { path: '/:id' });
-    this.route('edit', { path: '/:id/edit' })
+    this.route('edit', { path: '/:id/edit' });
   });
 });
 
