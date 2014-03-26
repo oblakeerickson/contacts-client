@@ -1,6 +1,6 @@
 <div id="header">
-  <a href="#" class="left" id="logo">Contacts</a>
-  <a href="#" class="right">New Contact</a>
+  {{#link-to 'contacts' class="left" id="logo"}}Contacts{{/link-to}}
+  {{#link-to 'contacts.new' class="right btn"}}New Contact{{/link-to}}
 </div>
 <div id="main">
   {{outlet}}

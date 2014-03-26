@@ -6,7 +6,7 @@
     {{notes}}
   </div>
   <div class="controls">
-    <a href="#" class="btn">Edit</a>
-    <button type="button" class="btn red">Delete</button>
+    {{#link-to 'contacts.edit' this class='btn'}}Edit{{/link-to}}
+    <button type="button" class="btn red" {{action 'deleteContact'}}>Delete</button>
   </div>
 </div>
